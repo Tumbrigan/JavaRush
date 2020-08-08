@@ -5,7 +5,7 @@ import com.javarush.task.task27.task2712.ConsoleHelper;
 import java.util.Observable;
 import java.util.Observer;
 
-public class Cook implements Observer {
+public class Cook extends Observable implements Observer {
     private final String name;
 
     public Cook(String name) {
@@ -22,5 +22,7 @@ public class Cook implements Observer {
     public void update(Observable o, Object arg) {
         ConsoleHelper.writeMessage(arg.toString());
         ConsoleHelper.writeMessage("Start cooking - " + arg.toString());
+        setChanged();
+        notifyObservers(arg);
     }
 }
