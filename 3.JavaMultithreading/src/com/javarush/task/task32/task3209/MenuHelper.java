@@ -1,11 +1,14 @@
 package com.javarush.task.task32.task3209;
 
+import com.javarush.task.task32.task3209.actions.*;
 import com.javarush.task.task32.task3209.listeners.TextEditMenuListener;
 import com.javarush.task.task32.task3209.listeners.UndoMenuListener;
 
+import javax.swing.*;
 import javax.swing.text.DefaultEditorKit;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledEditorKit;
+import java.awt.*;
 import java.awt.event.ActionListener;
 
 public class MenuHelper {

@@ -23,6 +23,7 @@ public class Solution {
         public Apt3Bedroom(Building building) {
             building.super();
         }
+
     }
 
     public class BigHall extends Building.Hall {

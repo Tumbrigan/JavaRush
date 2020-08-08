@@ -49,7 +49,7 @@ public class Solution {
             Tree tree = (Tree) super.clone();
             tree.branches = new String[branches.length];
             for (int i = 0; i < branches.length; i++) {
-                tree.branches[i] = new String(branches[i]);
+                tree.branches[i] = branches[i];
             }
             return tree;
         }
