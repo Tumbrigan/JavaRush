@@ -19,9 +19,22 @@ public class Order {
         return dishes;
     }
 
+    // return minutes
+    public int getTotalCookingTime() {
+        return dishes.stream().mapToInt(Dish::getDuration).sum();
+    }
+
+    public boolean isEmpty() {
+        return dishes.isEmpty();
+    }
+
+    public Tablet getTablet() {
+        return tablet;
+    }
+
     @Override
     public String toString() {
         return "Your order: " + dishes +
-                " of " + tablet;
+                " of " + tablet + ", cookingTime " + getTotalCookingTime() + "min";
     }
 }

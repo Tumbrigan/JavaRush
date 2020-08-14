@@ -11,10 +11,22 @@ public class Restaurant {
         cook.addObserver(waiter);
         tablet.addObserver(cook);
 
+        Tablet tablet2 = new Tablet(3);
+        Cook cook2 = new Cook("Vasya");
+        Waiter waiter2 = new Waiter();
+        cook2.addObserver(waiter2);
+        tablet2.addObserver(cook2);
+//
         tablet.createOrder();
-//        tablet.createOrder();
-//        tablet.createOrder();
-//        tablet.createOrder();
+        tablet2.createOrder();
+        tablet.createOrder();
+        tablet.createOrder();
+        tablet.createOrder();
 
+        DirectorTablet directorTablet = new DirectorTablet();
+        directorTablet.printAdvertisementProfit();
+        directorTablet.printCookWorkloading();
+        directorTablet.printActiveVideoSet();
+        directorTablet.printArchivedVideoSet();
     }
 }

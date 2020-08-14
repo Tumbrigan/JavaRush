@@ -22,6 +22,7 @@ public class ConsoleHelper {
         writeMessage(Dish.allDishesToString());
         List<Dish> dishes = new ArrayList<>();
         String input;
+//        writeMessage("Введите желаемое блюдо: ");
         while (!(input = readString()).equals("exit")) {
             try {
                 dishes.add(Dish.valueOf(input));
