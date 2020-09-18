@@ -37,4 +37,9 @@ public class Model {
         return Arrays.stream(gameTiles).flatMap(Arrays::stream)
                 .filter(Tile::isEmpty).collect(Collectors.toList());
     }
+
+
+    private void compressTiles(Tile[] tiles) {
+
+    }
 }

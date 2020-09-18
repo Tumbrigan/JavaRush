@@ -8,7 +8,5 @@ public class Test {
             int randomInt = new Random().nextInt(50);
             System.out.println(randomInt);
         }
-
-
     }
 }
